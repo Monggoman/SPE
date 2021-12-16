@@ -1,4 +1,4 @@
-const staticCacheName = "site-static-v1";
+const staticCacheName = "site-static-v2";
 const dynamicCache = "dynamic-v2";
 const assets = [
     'https://monggoman.github.io/SPE.github.io/',
