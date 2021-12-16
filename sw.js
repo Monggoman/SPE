@@ -1,5 +1,5 @@
 const staticCacheName = "site-static-v1";
-const dynamicCache = "dynamic-v1";
+const dynamicCache = "dynamic-v2";
 const assets = [
     'https://monggoman.github.io/SPE.github.io/',
     'https://monggoman.github.io/SPE.github.io/index.html',
