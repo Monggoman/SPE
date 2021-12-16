@@ -1,7 +1,7 @@
 {
     "name": "Student Performance Evaluator",
     "short_name": "SPE",
-    "start_url": "/index.html",
+    "start_url": "https://monggoman.github.io/SPE.github.io/index.html",
     "display": "standalone",
     "background_color": "white",
     "theme_color": "#FF8816",
