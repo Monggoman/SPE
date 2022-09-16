@@ -7,3 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Sidenav.init(forms, {edge: 'left'});
   });
 
+
+	$(document).ready( function () {
+    $('#student-table').DataTable();
+
+		
+} );
+
+  
+	
+
+ 
+

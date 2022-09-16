@@ -1,14 +1,14 @@
-const staticCacheName = "site-static-v2";
-const dynamicCache = "dynamic-v2";
+const staticCacheName = "site-static-v16";
+const dynamicCache = "dynamic-v16";
 const assets = [
-    'https://monggoman.github.io/SPE.github.io/',
-    'https://monggoman.github.io/SPE.github.io/index.html',
-    'https://monggoman.github.io/SPE.github.io/js/app.js',
-    'https://monggoman.github.io/SPE.github.io/js/materialize.min.js',
-    'https://monggoman.github.io/SPE.github.io/js/ui.js',
-    'https://monggoman.github.io/SPE.github.io/css/style.css',
-    'https://monggoman.github.io/SPE.github.io/css/materialize.min.css',
-    'https://monggoman.github.io/SPE.github.io/img/logo1.png',
+    '/student eval/',
+    '/student eval/index.php',
+    '/student eval/js/app.js',
+    '/student eval/js/materialize.min.js',
+    '/student eval/js/ui.js',
+    '/student eval/css/style.css',
+    '/student eval/css/materialize.min.css',
+    '/student eval/img/logo1.png',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
 ];
 
@@ -39,6 +39,8 @@ self.addEventListener('activate', evt =>{
 //fetch event
 self.addEventListener('fetch', evt =>{
     //console.log('fetch event', evt);
+		if (!(evt.request.url.indexOf('http') === 0)) return; // skip the request. if request is not made with http protocol
+
     evt.respondWith(
         caches.match(evt.request).then(cacheRes =>{
             return cacheRes || fetch(evt.request).then(fetchRes =>{
